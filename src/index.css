@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://1x0o8332wv0f2f2d7y2w4ts8-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/Guide-Ben-Nevis-Winter-1.jpg");
+  color: aliceblue;
+  text-shadow: 1px 1px black;
 }
 
 code {

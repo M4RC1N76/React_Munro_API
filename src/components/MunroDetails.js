@@ -1,24 +1,29 @@
 import React from "react";
 
-const MunroDetails = ({munro, onYourChosenMunro}) => {
+const MunroDetails = ({munro}) => { // removed 2nd parameter onYourchosenMunro
 
     if(!munro) {
         return null
     }
 
-    const handleClick = () => {
-        onYourChosenMunro(munro.chosenMunro)
-    }
+    // const handleClick = () => {
+    //     onYourChosenMunro(munro.chosenMunro)
+    // }
 
 
 
     return (
         <>
-            <p>Munro details go here: {munro.name}</p>
-            <button onClick={handleClick}></button>
+        <div class="munro-details">
+            <h4>Munro details go here: {munro.name}</h4>
+            <h4>height: {munro.height}</h4>
+            <h4>region: {munro.region}</h4>
+            <h4>meaning: {munro.meaning}</h4>
+            {/* <button onClick={handleClick}></button>  */}
+            </div>
         </>
     )
 }
-console.log('Munro details');
+
 
 export default MunroDetails;
