@@ -24,11 +24,11 @@ const MunroSelector = ({ munros, onMunroSelected }) => { // was munros
 
     })
 
-
+// below  onChange executes an event handler during change event
     return (
         <>
-            <h3>Select Munro from the list bellow:</h3>
-        <select onChange={handleChange} defaultValue="" >
+            <h3>Select Munro from the list below:</h3>
+        <select onChange={handleChange} defaultValue="" > 
             {munroNodes}
         </select> 
         

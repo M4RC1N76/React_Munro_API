@@ -7,7 +7,7 @@ const MunroContainer = () => {
 
     const [munros, setMunro] = useState ([]);
     const [selectedMunro, setSelectedMunro] = useState({});
-    const [loaded, setLoaded] = useState(false);
+    // const [loaded, setLoaded] = useState(false);
 
 const getMunro = () => {
     // console.log('getting Munro info');
@@ -16,7 +16,7 @@ const getMunro = () => {
     .then(data => {setMunro(data);
     setSelectedMunro(data[0]); // sets the Munro Details to Ben Nevis as it is 1st on the list
     })
-    .then(() => setLoaded(true))
+    //.then(() => setLoaded(true))
 }
 
     useEffect(() => {
